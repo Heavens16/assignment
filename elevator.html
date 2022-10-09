@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elevator</title>
+        <script>
+            function elevator(){
+                var text;
+                var num;
+                document.getElementById("elevator").value;
+                switch(num){
+                    case 1:
+                        mum = "Going to the first floor."
+                        break;
+                    case 2:
+                        mum = "Going to the second floor."
+                        break;
+                    case 1:
+                        mum = "Going to the third floor."
+                        break;
+                    case 1:
+                        mum = "Going to the fouth floor."
+                        break;
+                    case 1:
+                        mum = "floor doesn exist."
+                        break;
+                }
+                document.getElementById(floorNumber).innerHTML  
+            }
+        </script>
+    </head>
+    <body>
+        <div style="height: inherit;">
+            <input type="number" id="elevatorNumber" placeholder="Enter floor numbers."> 
+            <button onclick="elevator()">Enter level</button>
+            <div id="floorNumber"></div>
+        </div>
+    </body>
+</html>
