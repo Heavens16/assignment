@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Loops</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="forloop"></p>
+        <p id="forin"></p>
+        <script>
+            let text  = "";
+            let words = "";
+            let phrase = "";
+            let i  = 0;
+            let names = ['Joel', 'Rorena', 'Gladys', 'Erone', 'Evans'];
+
+            // do while loop
+            do {
+                if(names[i] === 'Gladys'){
+                    text += "This is my name. "+ names[i] + " <br>"
+                    
+                } else {
+                    text += names[i] + " <br>"
+                }
+                i++;
+            }
+            while(i < names.length);
+
+            //  for of loop
+            for(let x of names){
+                if(x === 'Gladys'){
+                    words += "This is my name. "+ x + " <br>"
+                    
+                } else {
+                words += x + " <br>"
+                }
+            }
+
+            // for each statement
+            names.forEach(myFunction);
+
+            function myFunction(item) {
+                
+                if(item === 'Gladys'){
+                    phrase += "This is my name. "+ item + " <br>"
+                    
+                } else {
+                    phrase += item + " <br>"
+                }
+            }
+
+
+            document.getElementById("demo").innerHTML = text;
+            document.getElementById("forloop").innerHTML = words;
+            document.getElementById("forin").innerHTML = phrase;
+        </script>
+    </body>
+</html>
